@@ -1,0 +1,1438 @@
+
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+a{text-decoration: none !important;}
+
+ul,li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+hr{
+  border: 1px solid #808080;
+  width: 90%;
+}
+
+
+.menu__mobile{
+  display: none;
+}
+
+.footer__section--mobile{
+    display: none;
+}
+
+
+/* Navbar Desctop*/
+
+  /* Mobile menu   display: flex; */
+.navbar__container {
+  display: none;
+  height: 5rem;
+  width: 100vw;
+}
+
+
+.footer__section,
+.navbar__section{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+     overflow: hidden;
+  }
+
+  .navbar__section{
+    display: flex;
+  }
+
+  .footer__section{
+      display: flex;
+  }
+
+
+.menu__container {
+  display: flex;
+  width: 68rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__link {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.menu__inner{
+  display: flex;
+  justify-content: flex-end;
+}
+
+ .menu__btn-group{
+   display: flex;
+   flex-direction: row;
+   column-gap: 0.5rem; /* 8px */
+ }
+
+.menu__btn{
+  display: flex;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: #2C93C8;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 0.5rem;  /* 8px */
+  border: none;
+}
+
+
+/* Navbar Desctop */
+/* Sidebar Desctop*/
+
+.sidebar__section{
+  display: flex;
+  position: relative;
+  width: 100vw;
+  height: auto;
+  /* flex-direction: column;    */
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  overflow: hidden;
+}
+
+.sidebar__container{
+  width: auto;
+  height: auto;
+  /* flex-direction: column;    */
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  column-gap: 3rem; /* 48px */
+
+}
+
+/* Sidebar Telegram */
+.sidebar__container--telegram{
+  display: flex;
+  width: 40rem;
+  float: left;
+  border-width: 0.063rem;
+  border-color: rgba(128, 128, 128, 1);
+  border-style: solid;
+  border-radius: 0.5rem; /* 8px */
+  margin-right: 1.5rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar_inner--telegram{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar__list--telegram{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar__item--telegram{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+/* Telegram link widget */
+.sidebar__link--telegram{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+/* Telegram link widget */
+/* Sidebar Telegram */
+/* Sidebar Info */
+.sidebar__container--info{
+  display: flex;
+  float: right;
+  border-radius: 0.5rem; /* 8px */
+}
+
+.sidebar__inner--info{
+display: flex;
+}
+.sidebar__wrapper--info{
+  display: flex;
+  position: relative;
+  row-gap: 1.5rem; /* 24px */
+  flex-direction: column;
+}
+
+.sidebar__holder--info{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-right: 4rem; /* 64px */
+  border-width: 0.063rem;
+  border-color: rgba(128, 128, 128, 1);
+  border-style: solid;
+  border-radius: 0.5rem; /* 8px */
+}
+
+.sidebar__wraptitle--info{
+  text-align: left;
+  padding: 2rem;
+}
+
+.sidebar__title--info{
+  color: rgba(000, 000, 000, 1) ;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.sidebar__list--info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sidebar__item--info{
+  display: flex;
+  align-content: center;
+
+}
+
+.sidebar__link--info{
+  display: flex;
+	column-gap: 0.5rem; /* 8px */
+  padding-top: 0.5rem; /* 8px */
+  padding-bottom: 0.5rem; /* 8px */
+}
+
+
+.sidebar__icon--info{
+  display: inline;
+  float:left;
+}
+
+.sidebar__wrapheading--info{
+  display: flex;
+	flex-direction: column;
+}
+
+.sidebar__heading--info{
+  color: rgba(000, 000, 000, 1) ;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidebar__subheading--info{
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.sidebar__wrapheadline--info{
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  padding: 2rem; /* 32px */
+  row-gap: 0.375rem; /* 6px */
+}
+
+.sidebar__headline--info{
+  display: flex;
+  color: rgba(000, 000, 000, 1) ;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidebar__subheadline--info{
+  display: flex;
+  color: rgba(000, 000, 000, 1) ;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.sidebar__wrapcaption--info{
+  display: flex;
+}
+
+.sidebar__caption--info{
+  color: rgba(000, 000, 000, 1) ;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+/* Sidebar Info */
+/* Sidebar Desctop*/
+
+/* Banner Desctop*/
+
+.banner__section{
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-top: 4rem; /* 64px */
+  margin-bottom: 4rem; /* 64px */
+  overflow: hidden;
+}
+
+.banner__container{
+  display: flex;
+  width: 80vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  column-gap: 2rem; /* 64px */
+  row-gap: 2rem; /* 64px */
+  flex-direction: row;
+}
+
+.banner__inner{
+  display: flex;
+	padding: 0.25rem; /* 32px */
+}
+
+.banner__picture{
+ display: flex;
+ width: 100%;
+}
+/* Banner Desctop*/
+
+/* Maps */
+.maps__section{
+  display: flex;
+  width: 100vw;
+  position: relative;
+  flex-direction: column;
+  padding: 2rem; /* 32px */
+  overflow: hidden;
+}
+
+.maps__container{
+  display: grid;
+  width: 100vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.maps__title{
+  display: grid;
+  width: 100%;
+  height: auto;
+
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  color: rgba(000, 000, 000, 1);
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 3rem; /* 32px */
+  padding-left: 2rem;
+    padding-right: 4rem;
+
+}
+
+/* яндекс карта */
+
+.maps__iframe{
+display: flex;
+
+ position: relative;
+ overflow: hidden;
+ justify-content: center;
+ justify-items: center;
+ align-items: center;
+ width: 100%;
+ height: 30rem;
+ padding-left: 1rem;
+   padding-right: 2rem;
+
+ /* padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625)  */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.maps__responsive {
+display: flex;
+position: relative;
+width: 100%;
+height: 30rem;
+}
+/* яндекс карта */
+/* Maps */
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 1100px) and (max-width: 1280px) {
+
+    /* Banner Desctop*/
+
+    .banner__section{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      margin-top: 4rem; /* 64px */
+      margin-bottom: 4rem; /* 64px */
+      overflow: hidden;
+    }
+
+    .banner__container{
+      display: flex;
+      width: 96vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      column-gap: 0.5rem; /* 64px */
+      row-gap: 0.5rem; /* 64px */
+      flex-direction: row;
+    }
+
+    .banner__inner{
+      display: flex;
+    	padding: 0rem; /* 32px */
+    }
+
+    .banner__picture{
+     display: flex;
+     width: 96%;
+    }
+    /* Banner Desctop*/
+
+
+
+    /* Maps */
+    .maps__section{
+      display: flex;
+      width: 100vw;
+      position: relative;
+      flex-direction: column;
+      padding: 2rem; /* 32px */
+      overflow: hidden;
+    }
+
+    .maps__container{
+      display: grid;
+      width: 100vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .maps__title{
+      display: grid;
+      width: 100%;
+      height: auto;
+
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      color: rgba(000, 000, 000, 1);
+      font-weight: bold;
+      font-size: 2rem;
+      padding-bottom: 4rem; /* 32px */
+      padding-left: 5rem;
+        padding-right: 6rem;
+
+    }
+
+    /* яндекс карта */
+
+    .maps__iframe{
+    display: flex;
+
+     position: relative;
+     overflow: hidden;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+     width: 100%;
+     height: 30rem;
+     padding-left: 5rem;
+       padding-right: 6rem;
+
+     /* padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625)  */
+    }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+    .maps__responsive {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    }
+    /* яндекс карта */
+    /* Maps */
+
+
+
+
+}
+
+
+
+
+
+
+
+
+  @media (min-width: 996px) and (max-width: 1100px) {
+  /* Sidebar Telegram */
+  .sidebar__container--telegram{
+    display: flex;
+    width: 30rem;
+    float: left;
+    border-width: 0.063rem;
+    border-color: rgba(128, 128, 128, 1);
+    border-style: solid;
+    border-radius: 0.5rem; /* 8px */
+    margin-right: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+
+  .sidebar__holder--info{
+    padding-right: 2rem; /* 64px */
+  }
+
+  .sidebar__wraptitle--info{
+    text-align: left;
+    padding: 2rem;
+  }
+  .sidebar__wrapheadline--info{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 2rem; /* 32px */
+    row-gap: 0.375rem; /* 6px */
+  }
+
+
+
+    /* Banner Desctop*/
+
+    .banner__section{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      margin-top: 4rem; /* 64px */
+      margin-bottom: 4rem; /* 64px */
+      overflow: hidden;
+    }
+
+    .banner__container{
+      display: flex;
+      width: 96vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      column-gap: 0.5rem; /* 64px */
+      row-gap: 0.5rem; /* 64px */
+      flex-direction: row;
+    }
+
+    .banner__inner{
+      display: flex;
+    	padding: 0rem; /* 32px */
+    }
+
+    .banner__picture{
+     display: flex;
+     width: 96%;
+    }
+    /* Banner Desctop*/
+
+    /* Maps */
+    .maps__section{
+      display: flex;
+      width: 100vw;
+      position: relative;
+      flex-direction: column;
+      padding: 2rem; /* 32px */
+      overflow: hidden;
+    }
+
+    .maps__container{
+      display: grid;
+      width: 100vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .maps__title{
+      display: grid;
+      width: 100%;
+      height: auto;
+
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      color: rgba(000, 000, 000, 1);
+      font-weight: bold;
+      font-size: 2rem;
+      padding-bottom: 4rem; /* 32px */
+      padding-left: 5rem;
+        padding-right: 6rem;
+
+    }
+
+    /* яндекс карта */
+
+    .maps__iframe{
+    display: flex;
+
+     position: relative;
+     overflow: hidden;
+     justify-content: center;
+     justify-items: center;
+     align-items: center;
+     width: 100%;
+     height: 30rem;
+     padding-left: 2rem;
+       padding-right: 6rem;
+
+     /* padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625)  */
+    }
+
+    /* Then style the iframe to fit in the container div with full height and width */
+    .maps__responsive {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    }
+    /* яндекс карта */
+    /* Maps */
+
+
+}
+
+@media (min-width: 871px) and (max-width: 995px) {
+  /* Sidebar Telegram */
+  .sidebar__container--telegram{
+    display: flex;
+    width: 25rem;
+    float: left;
+    border-width: 0.063rem;
+    border-color: rgba(128, 128, 128, 1);
+    border-style: solid;
+    border-radius: 0.5rem; /* 8px */
+    margin-right: 1.5rem;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .sidebar__holder--info{
+    padding-right: 2rem; /* 64px */
+  }
+
+  .sidebar__wraptitle--info{
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .sidebar__wrapheadline--info{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 2rem; /* 32px */
+    row-gap: 0.375rem; /* 6px */
+  }
+
+
+  /* Banner Desctop*/
+
+  .banner__section{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4rem; /* 64px */
+    margin-bottom: 4rem; /* 64px */
+    overflow: hidden;
+  }
+
+  .banner__container{
+    display: flex;
+    width: 96vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 0.5rem; /* 64px */
+    row-gap: 0.5rem; /* 64px */
+    flex-direction: row;
+  }
+
+  .banner__inner{
+    display: flex;
+  	padding: 0rem; /* 32px */
+  }
+
+  .banner__picture{
+   display: flex;
+   width: 96%;
+  }
+  /* Banner Desctop*/
+
+
+
+  /* Maps */
+  .maps__section{
+    display: flex;
+    width: 100vw;
+    position: relative;
+    flex-direction: column;
+    padding: 2rem; /* 32px */
+    overflow: hidden;
+  }
+
+  .maps__container{
+    display: grid;
+    width: 100vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .maps__title{
+    display: grid;
+    width: 100%;
+    height: auto;
+
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    color: rgba(000, 000, 000, 1);
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 4rem; /* 32px */
+    padding-left: 6rem;
+      padding-right: 7rem;
+
+  }
+
+  /* яндекс карта */
+
+  .maps__iframe{
+  display: flex;
+
+   position: relative;
+   overflow: hidden;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   width: 100%;
+   height: 30rem;
+   padding-left: 2rem;
+     padding-right: 6rem;
+
+   /* padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625)  */
+  }
+
+  /* Then style the iframe to fit in the container div with full height and width */
+  .maps__responsive {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  }
+  /* яндекс карта */
+  /* Maps */
+
+
+
+
+
+}
+
+@media (min-width: 769px) and (max-width: 870px) {
+/* Sidebar Telegram */
+.sidebar__container--telegram{
+  display: flex;
+  width: 22rem;
+  float: left;
+  border-width: 0.063rem;
+  border-color: rgba(128, 128, 128, 1);
+  border-style: solid;
+  border-radius: 0.5rem; /* 8px */
+  margin-right: 1.5rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.sidebar__holder--info{
+  padding-right: 2rem; /* 64px */
+}
+
+  .sidebar__wraptitle--info{
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .sidebar__wrapheadline--info{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    padding: 2rem; /* 32px */
+    row-gap: 0.375rem; /* 6px */
+  }
+
+
+  /* Banner Desctop*/
+
+  .banner__section{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin-top: 4rem; /* 64px */
+    margin-bottom: 4rem; /* 64px */
+    overflow: hidden;
+  }
+
+  .banner__container{
+    display: flex;
+    width: 96vw;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    column-gap: 0.5rem; /* 64px */
+    row-gap: 0.5rem; /* 64px */
+    flex-direction: row;
+  }
+
+  .banner__inner{
+    display: flex;
+  	padding: 0rem; /* 32px */
+  }
+
+  .banner__picture{
+   display: flex;
+   width: 96%;
+  }
+  /* Banner Desctop*/
+
+
+
+      /* Maps */
+      .maps__section{
+        display: flex;
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+        padding: 2rem; /* 32px */
+        overflow: hidden;
+      }
+
+      .maps__container{
+        display: grid;
+        width: 100vw;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+      }
+
+      .maps__title{
+        display: grid;
+        width: 100%;
+        height: auto;
+
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        color: rgba(000, 000, 000, 1);
+        font-weight: bold;
+        font-size: 2rem;
+        padding-bottom: 4rem; /* 32px */
+        padding-left: 6rem;
+          padding-right: 7rem;
+
+      }
+
+      /* яндекс карта */
+
+      .maps__iframe{
+      display: flex;
+
+       position: relative;
+       overflow: hidden;
+       justify-content: center;
+       justify-items: center;
+       align-items: center;
+       width: 100%;
+       height: 30rem;
+       padding-left: 2rem;
+         padding-right: 6rem;
+
+       /* padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625)  */
+      }
+
+      /* Then style the iframe to fit in the container div with full height and width */
+      .maps__responsive {
+      display: flex;
+      position: relative;
+      width: 100%;
+      height: 30rem;
+      }
+      /* яндекс карта */
+      /* Maps */
+
+
+
+
+
+
+}
+
+  @media (min-width: 0px) and (max-width: 768px) {
+
+
+    /* Sidebar Mobile*/
+
+    .sidebar__section{
+      display: flex;
+      position: relative;
+      width: 100vw;
+      height: auto;
+      /* flex-direction: column;    */
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      overflow: hidden;
+    }
+
+    .sidebar__container{
+      width: 100vw;
+      height: auto;
+      /* flex-direction: column;    */
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      row-gap: 3rem; /* 48px */
+
+    }
+
+    /* Sidebar Telegram */
+    .sidebar__container--telegram{
+      display: flex;
+      position: relative;
+      width: 100vw;
+      border-width: 0;
+      border-color: rgba(128, 128, 128, 0);
+      border-style: none;
+      border-radius: 0.5rem; /* 8px */
+      justify-content: center;
+      justify-items: center;
+      align-content: center;
+      margin-bottom: 1.5rem; /* 24px */
+    }
+
+    .sidebar_inner--telegram{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .sidebar__list--telegram{
+      display: flex;
+      flex-direction: column;
+
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      row-gap:1rem;
+    }
+
+    .sidebar__item--telegram{
+      display: flex;
+
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+    /* Telegram link widget */
+    .sidebar__link--telegram{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+    }
+
+    /* Telegram link widget */
+    /* Sidebar Telegram */
+    /* Sidebar Info */
+    .sidebar__container--info{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      width: 100vw;
+    }
+
+    .sidebar__inner--info{
+    display: flex;
+    width: 100vw;
+    }
+    .sidebar__wrapper--info{
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      position: relative;
+      width: 100vw;
+      row-gap: 1.5rem; /* 24px */
+      flex-direction: column;
+    }
+
+    .sidebar__holder--info{
+      display: flex;
+      width: 93vw;
+      position: relative;
+      flex-direction: column;
+      padding-right: 4rem; /* 64px */
+      border-width: 0.063rem;
+      border-color: rgba(128, 128, 128, 1);
+      border-style: solid;
+      border-radius: 0.5rem; /* 8px */
+    }
+
+    .sidebar__wraptitle--info{
+      text-align: left;
+      padding: 2rem;
+    }
+
+    .sidebar__title--info{
+      color: rgba(000, 000, 000, 1) ;
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    .sidebar__list--info{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .sidebar__item--info{
+      display: flex;
+      align-content: center;
+
+    }
+
+    .sidebar__link--info{
+      display: flex;
+    	column-gap: 0.5rem; /* 8px */
+      padding-top: 0.5rem; /* 8px */
+      padding-bottom: 0.5rem; /* 8px */
+    }
+
+
+    .sidebar__icon--info{
+      display: inline;
+      float:left;
+    }
+
+    .sidebar__wrapheading--info{
+      display: flex;
+    	flex-direction: column;
+    }
+
+    .sidebar__heading--info{
+      color: rgba(000, 000, 000, 1) ;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .sidebar__subheading--info{
+      text-align: left;
+      font-size: 0.875rem;
+    }
+
+    .sidebar__wrapheadline--info{
+      display: flex;
+      text-align: left;
+      flex-direction: column;
+      padding: 2rem; /* 32px */
+      row-gap: 0.375rem; /* 6px */
+    }
+
+    .sidebar__headline--info{
+      display: flex;
+      color: rgba(000, 000, 000, 1) ;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .sidebar__subheadline--info{
+      display: flex;
+      color: rgba(000, 000, 000, 1) ;
+      text-align: left;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .sidebar__wrapcaption--info{
+      display: flex;
+    }
+
+    .sidebar__caption--info{
+      color: rgba(000, 000, 000, 1) ;
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: left;
+    }
+    /* Sidebar Info */
+    /* Sidebar Mobile*/
+
+    /* Banner Mobile*/
+    .banner__section{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      margin-top: 4rem; /* 64px */
+      margin-bottom: 4rem; /* 64px */
+      overflow: hidden;
+    }
+
+    .banner__container{
+      display: flex;
+      width: 100vw;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      column-gap: 4rem; /* 64px */
+      flex-direction: column;
+    }
+
+    .banner__inner{
+      display: flex;
+      position: relative;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+       width: 100vw
+    	/* padding: 2rem;   */
+    }
+
+    .banner__picture{
+      display: flex;
+      position: relative;
+     width: 92vw;
+    }
+    /* Banner Mobile*/
+
+
+
+
+
+
+          /* Maps */
+          .maps__section{
+            display: flex;
+            width: 100vw;
+            position: relative;
+            flex-direction: column;
+            padding: 0.5rem; /* 32px */
+            overflow: hidden;
+          }
+
+          .maps__container{
+            display: grid;
+            width: 100vw;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+
+          .maps__title{
+            display: grid;
+            width: 100%;
+            height: auto;
+
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            color: rgba(000, 000, 000, 1);
+            font-weight: bold;
+            font-size: 1.5rem;
+            padding-bottom: 4rem; /* 32px */
+
+
+          }
+
+          /* яндекс карта */
+
+          .maps__iframe{
+          display: flex;
+
+           position: relative;
+           overflow: hidden;
+           justify-content: center;
+           justify-items: center;
+           align-items: center;
+           width: 100%;
+           height: 20rem;
+
+
+           /* padding-top: 56.25%;  16:9 Aspect Ratio (divide 9 by 16 = 0.5625)  */
+          }
+
+          /* Then style the iframe to fit in the container div with full height and width */
+          .maps__responsive {
+          display: flex;
+          position: relative;
+          width: 100%;
+          height: 30rem;
+          }
+          /* яндекс карта */
+          /* Maps */
+
+  /* Mobile menu */
+
+  .navbar__section{
+    display: none;
+  }
+
+  .footer__section{
+      display: none;
+  }
+
+  /* Style the navigation menu */
+
+ .menu__mobile {
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: 5rem;
+   overflow: hidden;
+   background-color: rgba(255, 255, 255, 1);
+   position: relative;
+ }
+
+  .menu__list--mobile{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+
+ /* Hide the links inside the navigation menu (except for logo/home) */
+ .menu__mobile #myLinks {
+   display: none;
+ }
+
+ /* Style navigation menu links */
+ .menu__btn--mobile {
+   text-decoration: none;
+   display: flex;
+
+   font-size: 1rem;
+   color: #2C93C8;
+   background-color: rgba(255,255,255, 1);
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   border-radius: 0rem;  /* 8px */
+   border: none;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+ }
+
+
+ /* Style the hamburger menu */
+ .menu__icon--mobile  {
+   color: rgba(255, 255, 255, 1);
+   background-color: #2C93C8;
+   display: block;
+   position: absolute;
+   padding-left: 0.9rem;
+   padding-right: 0.9rem;
+   padding-top: 0.7rem;
+   padding-bottom: 0.6rem;
+   right: 0;
+   top: 0;
+ }
+
+ /* Add a grey background color on mouse-over */
+ .menu__mobile a:hover {
+   color: rgba(255, 255, 255, 1);
+   background-color: #2C93C8;
+ }
+
+ /* Style the active link (or home/logo) */
+ .active {
+
+   color: white;
+ }
+
+
+.navbar__link{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.9rem;
+}
+
+.menu__container {
+  display: flex;
+  width: 68rem;
+  justify-content: space-between;
+  align-items: center;
+}
+  /* Mobile menu */
+
+.footer__section--mobile{
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding-left: 0rem;
+    padding-right:0rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    width: 100vw;
+    height: 15rem;
+    overflow: hidden;
+    background-color: #2C93C8;
+  }
+
+  .footer__section--mobile{
+    display: flex;
+  }
+
+  .footer__section--mobile{
+      display: flex;
+  }
+
+.footer__container--mobile {
+  display: flex;
+ flex-direction: column-reverse;;
+  width: 100vw;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer__link--mobile {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 5rem;
+}
+
+.footer__inner--mobile{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+ .footer__btn-group--mobile{
+   display: flex;
+   width: 100vw;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   text-align: center;
+   margin-top: 5rem;
+   width: 100vw;
+   flex-direction: column;
+   background-color: #2C93C8;
+ }
+
+.footer__btn--mobile{
+  display: flex;
+
+  text-align: center;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 1);
+  background-color: #2C93C8;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border: none;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+}
